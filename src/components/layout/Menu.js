@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
+
 import MenuItem from './MenuItem';
 
 class Menu extends Component {
@@ -9,9 +11,9 @@ class Menu extends Component {
 			<div className="sidebar" data-background-color="white" data-active-color="danger">
 				<div className="sidebar-wrapper">
 					<div className="logo">
-            <a href="http://www.creative-tim.com" className="simple-text">
+						<Link to="/" className="simple-text">
 							App Name
-            </a>
+						</Link>
           </div>
 
           <ul className="nav">
