@@ -16,6 +16,10 @@ class NavBar extends Component {
             </button>
             <a className="navbar-brand" href="#">{ menu }</a>
           </div>
+          <div className="collapse navbar-collapse">
+          	<ul className="nav navbar-nav navbar-right">
+          	</ul>
+          </div>
 				</div>
 			</nav>
 		);

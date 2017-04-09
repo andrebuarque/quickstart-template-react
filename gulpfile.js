@@ -8,7 +8,6 @@ gulp.task('scripts', function() {
   		'./src/assets/js/jquery-1.10.2.js', 
   		'./src/assets/js/bootstrap.min.js', 
   		'./src/assets/js/bootstrap-checkbox-radio.js',
-  		'./src/assets/js/chartist.min.js',
       './src/assets/js/bootstrap-notify.js',
       './src/assets/js/paper-dashboard.js',
       './src/assets/js/demo.js'
@@ -31,3 +30,5 @@ gulp.task('css', function() {
     .pipe(removeEmptyLines())
     .pipe(gulp.dest('./src'));
 });
+
+gulp.task('default', ['scripts', 'css']);
