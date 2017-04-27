@@ -12,9 +12,9 @@ gulp.task('scripts', function() {
       './src/assets/js/paper-dashboard.js',
       './src/assets/js/demo.js'
   	])
-    .pipe(concat('scripts.js'))
     .pipe(strip())
     .pipe(removeEmptyLines())
+    .pipe(concat('scripts.js'))
     .pipe(gulp.dest('./public'));
 });
 
@@ -26,8 +26,8 @@ gulp.task('css', function() {
       './src/assets/css/demo.css',
       './src/assets/css/themify-icons.css'
     ])
-    .pipe(concat('styles.css'))
     .pipe(removeEmptyLines())
+    .pipe(concat('styles.css'))
     .pipe(gulp.dest('./src'));
 });
 
